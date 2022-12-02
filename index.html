@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Band</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav starts -->
+    <nav class="section">
+        <div class="bar">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="listItem">
+            <ul>
+                <li><a class="transition active" href="#home">home</a></li>
+                <li><a class="transition" href="#band">band</a></li>
+                <li><a class="transition" href="#tour">tour</a></li>
+                <li><a class="transition" href="#places">places</a></li>
+                <li><a class="transition" href="#contact">contact</a></li>
+                <li onclick="myDropDown()"><a class="transition" href="#more">more</a><span class="angleDown">&#8711;</span></li>
+                <div class="myDropdown">
+                    <a href="#">Media</a>
+                    <a href="#">Extras</a>
+                    <a href="#">More</a>
+                </div>
+            </ul>
+        </div>
+        <div>
+            <i class="fas fa-search transition"></i>
+            <i class="fas fa-user transition"></i>
+            <i class="fas fa-moon transition"></i>
+        </div>
+    </nav>
+    <div class="loginForm">
+        <form action="">
+            <div class="tagContainer">
+                <div class="close">&times;</div>
+                <div class="user">
+                    <img src="./img/user-removebg-preview.png" alt="">
+                </div>
+                <div class="tag">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="name">
+                    <label for="email">Email</label>
+                    <input type="email" class="email">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="password">
+                    <div class="loginDiv">
+                        <button type="submit" class="btn loginBtn transition">Login</button>
+                    </div>
+                </div>
+                <div class="cancelDiv">
+                    <span>Forgot <a href="#">password?</a>&rightarrow;</span>
+                </div>
+            </div>
+        </form>                                                                                                        
+    </div>
+    <!-- nav ends -->
+
+    <!-- header starts -->
+    <section class="headerSection" id="home">
+        <div class="imgDiv">
+            <img src="./img/ny.jpg" alt="" class="headerImg m-bottom">
+        </div>
+    </section>
+    <!-- header ends -->
+
+    <!-- band starts -->
+    <section class="bandSection m-2rem" id="band">
+        <h1 class="h1Text">The Band</h1>
+        <h3 class="h3Text">We love music</h3>
+        <p class="p-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic nobis, doloribus quas, enim at consectetur tempora porro, sequi veniam beatae aliquid. Unde sapiente et quasi illum debitis ut sunt? Animi repudiandae quisquam quidem beatae culpa quia ab illo tempore similique iste consequatur, facere enim inventore totam! Ratione ad corporis commodi debitis tempore sapiente id dignissimos laborum, inventore magnam, provident velit eligendi quo necessitatibus nam facilis quae magni atque sunt. Voluptates doloribus quis cumque ducimus? Autem, in perspiciatis. Eveniet neque nostrum doloremque aut architecto modi, nemo magni enim obcaecati animi fugit sint vitae cupiditate voluptatum quas ut. Vero quos eos ex harum ut minus, illo totam omnis maxime magnam suscipit iste ullam. Optio natus necessitatibus explicabo aperiam iusto eum ipsam reiciendis, dolor odio esse animi. Earum culpa placeat illo magni iste ea quas odio commodi vitae atque nisi, a nobis. Quidem, voluptatibus ducimus reprehenderit odio et ut nulla, alias amet modi facere doloremque deleniti, ipsa iure! Laudantium optio, tempore quaerat, sed culpa eos, quis ex harum reiciendis sunt sequi? Distinctio dolorum illo fuga a minus, laudantium libero error voluptas. Illo, in! Repellat nihil cupiditate velit maiores necessitatibus eveniet sed soluta eaque tenetur odio. Fuga asperiores, iusto consectetur repellat odio quam.</p>
+        <div class="bandImg p-12 dgrid">
+            <div>
+                <img src="./img/bandmember.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/bandmember.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/bandmember.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- band ends -->
+
+    <!-- tour starts -->
+    <section class="tourSection m-2rem" id="tour">
+        <div>
+            <h1 class="h1Text">tour dates</h1>
+            <h3 class="h3Text">Remember to book your tickets!</h3>
+        </div>
+        <div class="tourContainer p-12 dgrid">
+            <div class="undraw">
+                <img src="./img/undraw_travel_booking_re_6umu.svg" alt="">
+            </div>
+            <div class="booking">
+                <label for="number">Number</label>
+                <input type="number" name="number" class="form-control" placeholder="number of people">
+                <label for="startDate">Start Date</label>
+                <input type="date" name="startDate" class="form-control">
+                <label for="arrivalDate">Arrival Date</label>
+                <input type="date" name="arrivalDate" class="form-control">
+                <button class="btn">Book Now</button>
+            </div>
+        </div>
+    </section>
+    <!-- tour ends -->
+
+    <!-- places starts -->
+    <section class="placesSection p-12" id="places">
+        <h1 class="h1Text">Places</h1>
+        <div class="placeContainer m-2rem dgrid">
+            <div class="placeBox">
+                <img src="./img/newyork.jpg" alt="">
+                <div class="p-2rem">
+                    <h3 class="h3Text">New York</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="m-bottom">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="btn">Buy tickets</button>
+                </div>
+            </div>
+            <div class="placeBox">
+                <img src="./img/paris.jpg" alt="">
+                <div class="p-2rem">
+                    <h3 class="h3Text">Paris</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="m-bottom">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="btn">Buy tickets</button>
+                </div>
+            </div>
+            <div class="placeBox">
+                <img src="./img/sanfran.jpg" alt="">
+                <div class="p-2rem">
+                    <h3 class="h3Text">San Francisco</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="m-bottom">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <button class="btn">Buy tickets</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- places ends -->
+
+    <!-- contact starts -->
+    <section class="contactSection p-12" id="contact">
+        <div data-aos="fade-up">
+            <h1 class="h1Text">contact</h1>
+            <h3 class="h3Text">Fan? Drop a note!</h3>
+        </div>
+        <div class="contactBox p-12 dgrid">
+            <div>
+                <h3 class="h2Text"><i class="fas fa-map-marker-alt"></i> Chicago, US</h3>
+                <h3 class="h2Text"><i class="fas fa-phone"></i> Phone: +00 151515</h3>
+                <h3 class="h2Text"><i class="fas fa-envelope"></i> Email: mail@gamil.com</h3>
+            </div>
+            <div class="contact">
+                <input type="text" placeholder="Name" class="nameTag">
+                <input type="text" placeholder="Email" class="emailTag">
+                <input type="text" placeholder="Message" class="messageTag">
+                <button class="btn contactBtn">SEND</button>
+            </div>
+        </div>
+    </section>
+    <!-- contact ends -->
+
+    <section class="locationImg">
+        <img src="./img/map.jpg" alt="" class="m-bottom">
+    </section>
+
+    <footer class="m-2rem">
+        <div class="icons">
+            <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook links"></i></a>
+            <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram links"></i></a>
+            <a href="http://www.pinterest.com" target="_blank"><i class="fab fa-pinterest links"></i></a>
+            <a href="http://www.linkedin.com" target="_blank"><i class="fab fa-linkedin links"></i></a>
+            <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter links"></i></a>
+        </div>
+        <h3 class="h3Text">Powered by <a href="#https://www.w3school.com">W3.CSS</a></h3>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.section{
+    padding: 0 4%;
+}
+.m-bottom{
+    margin-bottom: 1.5rem;
+}
+.transition{
+    transition: all .3s linear;
+}
+.m-2rem{
+    margin: 2rem 0;
+}
+.p-12{
+    padding: 2rem 12%;
+}
+nav{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+.listItem ul li{
+    display: inline-block;
+    padding: .8rem 1rem;
+    cursor: pointer;
+    border: 0;
+}
+.listItem ul li a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.fa-search, .fa-bars, .fa-user, .fa-moon{
+    cursor: pointer;
+    padding: .8rem 1rem;
+}
+.listItem ul li a:hover, .listItem ul li a.active{
+    color: #f05454;
+}
+.fa-search:hover, .fa-bars, .fa-user:hover, .fa-moon:hover{
+    border: 1px solid #f05454;
+    border-radius: 1rem;
+    padding: .8rem 1rem;
+}
+.bar{
+    display: none;
+}
+.loginForm{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.tagContainer{
+    background-color: #f05454;
+    font-size: 1.7rem;
+    width: 350px;
+}
+.tag{
+    padding: 1.8rem 4rem;
+}
+.name, .password, .email{
+    width: 100%;
+    padding: .5rem 1rem;
+    border: 1px solid #333;
+    margin-bottom: 1rem;
+    margin-top: .7rem;
+}
+.btn{
+    padding: .5rem 1.5rem;
+    background-color: #222;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: .4rem;
+}
+.btn:hover{
+    background-color: #111;
+    color: white;
+}
+.loginDiv{
+    display: grid;
+    place-items: center;
+    margin: 1.5rem 0;
+}
+.cancelDiv{
+    padding: 1.8rem 4rem;
+    background-color: rgb(0, 0, 0);
+}
+.cancelDiv span{
+    color: white;
+    padding-top: 1rem;
+}
+.cancelDiv span a{
+    color: #f05454;
+    text-decoration: underline;
+    margin-right: 2rem;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+}
+.user img{
+    width: 30%;
+}
+.close{
+    font-size: 4rem;
+    font-weight: bold;
+    float: right;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.imgDiv img,  .undraw img, .placeContainer img, .locationImg img{
+    width: 100%;
+}
+.h1Text{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.h3Text{
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 1rem 0;
+    color: #f05454;
+}
+.bandSection p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.dgrid{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.bandImg{
+    text-align: center;
+}
+.bandImg img{
+    width: 70%;
+}
+.headerSection{
+    margin-top: 7rem;
+}
+.tourSection label{
+    font-size: 2rem;
+}
+.form-control{
+    max-width: 100%;
+}
+.tourContainer input{
+    margin: 1rem 0 1.5rem 0;
+    padding: 1rem;
+}
+.booking{
+    border: 1px solid #eee;
+    padding: 1rem;
+}
+.placeBox{
+    border: 1px solid #444;
+}
+.p-2rem{
+    padding: 1rem 2rem 2rem 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.fa-star{
+    color: #f05454;
+}
+.h2Text{
+    font-size: 1.7rem;
+    margin: 1rem 0;
+}
+.h2Text i{
+    margin-right: 2rem;
+}
+.nameTag, .emailTag, .messageTag{
+    width: 100%;
+    padding: 1rem .7rem;
+    outline: none;
+    border: 1px solid #444;
+    margin-bottom: 1rem;
+    border-radius: .8rem;
+}
+.messageTag{
+    padding-bottom: 5rem;
+}
+.contact input::placeholder{
+    font-size: 1.2rem;
+}
+.contactBtn{
+    float: right;
+}
+.icons{
+    text-align: center;
+}
+.links{
+    text-decoration: none;
+    color: #222;
+}
+.links:hover{
+    color: #f05454;
+}
+.icons i{
+    font-size: 2rem;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+.dark-mode{
+    background-color: #111;
+    color: #fff;
+}
+.angleDown{
+    margin-left: .8rem;
+    font-size: 1.3rem;
+}
+.myDropdown{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 130px;
+    z-index: 1;
+    left: 40%;
+}
+.myDropdown a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.myDropdown a:hover{
+    background-color: #888;
+}
+.show{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .listItem ul{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        background-color: #333;
+        padding: 0 3%;
+        display: none;
+        text-align: left;
+    }
+    .listItem ul li{
+        display: block;
+        margin: 2rem 0;
+        border: 1px solid #444;
+    }
+    .bar{
+        display: block;
+    }
+    .myDropdown{
+        left: 3%;
+    }
+}
+@media screen and (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media screen and (max-width:400px) {
+    html{
+        font-size: 50%;
+    }
+}
